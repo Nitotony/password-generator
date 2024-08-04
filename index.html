@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <style>
+    
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #2196f3;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+.password-section {
+    margin-bottom: 20px;
+}
+
+.password-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#password {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#length {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#generate-btn {
+    width: 100%;
+    height: 40px;
+    background-color:green;
+    color:white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#generate-btn:hover {
+    background-color: white;
+    color: green;
+    border: 2px green solid;
+}
+
+    </style>
+</head>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Password Generator</h1>
+        </header>
+        <main>
+            <section class="password-section">
+                <label for="password">Generated Password</label>
+                <textarea id="password" disabled></textarea>
+            </section>
+            <section class="input-section">
+                <label for="length">Password Length</label>
+                <input type="text" id="length" />
+                <button id="generate-btn">Generate Password</button>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
